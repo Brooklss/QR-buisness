@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create beautiful, contactless QR code menus for your restaurant, cafe, or bar. Easy to edit, customize, and share instantly.">
+    <meta name="keywords" content="QR menu, digital menu, restaurant menu, contactless dining, QR code menu">
+    <title>QR Menus - Modern Digital Menus for Restaurants</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#0066FF"/>
+                        <path d="M10 20L20 25V30L10 25V20Z" fill="white"/>
+                        <path d="M25 15L30 17.5V20L25 17.5V15Z" fill="white"/>
+                        <circle cx="20" cy="15" r="3" fill="white"/>
+                    </svg>
+                    <span>QR Menus</span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#signup" class="btn-primary btn-small">Get Started</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="fade-in">Modern QR Menus<br>for Modern Dining.</h1>
+                    <p class="fade-in delay-1">Create, customize, and share your restaurant's menu instantly with a single QR code.</p>
+                    <div class="hero-cta fade-in delay-2">
+                        <a href="#signup" class="btn-primary btn-large">Get Started</a>
+                        <a href="#demo" class="btn-secondary btn-large">See How It Works</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in delay-3">
+                    <div class="phone-mockup">
+                        <svg viewBox="0 0 300 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="40" width="260" height="520" rx="30" fill="#1a1a1a"/>
+                            <rect x="30" y="50" width="240" height="500" rx="20" fill="white"/>
+                            <!-- QR Code Display -->
+                            <rect x="60" y="70" width="180" height="180" rx="12" fill="#ffffff" stroke="#e6e6e6"/>
+                            <clipPath id="qrClipHero">
+                                <rect x="64" y="74" width="172" height="172" rx="8"/>
+                            </clipPath>
+                            <image href="assets/Qcode.png" x="64" y="74" width="172" height="172" preserveAspectRatio="xMidYMid slice" clip-path="url(#qrClipHero)"/>
+                            <!-- Menu Items -->
+                            <rect x="40" y="310" width="220" height="30" fill="#f5f5f5" rx="5"/>
+                            <rect x="40" y="360" width="180" height="30" fill="#f5f5f5" rx="5"/>
+                            <rect x="40" y="410" width="200" height="30" fill="#f5f5f5" rx="5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose QR Menus?</h2>
+            <p class="section-subtitle fade-in delay-1">Everything you need to digitize your dining experience</p>
+            <div class="features-grid">
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="#0066FF" stroke-width="2" fill="none"/>
+                            <path d="M24 12V24L32 28" stroke="#0066FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Easy to Edit</h3>
+                    <p>Update your menu anytime, anywhere. No technical skills required. Changes appear instantly.</p>
+                </div>
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 36L12 28V12L24 4L36 12V28L24 36Z" stroke="#0066FF" stroke-width="2" fill="none"/>
+                            <circle cx="24" cy="18" r="4" fill="#0066FF"/>
+                        </svg>
+                    </div>
+                    <h3>Contactless & Safe</h3>
+                    <p>Perfect for modern dining. No shared surfaces, no physical menus. Just scan and enjoy.</p>
+                </div>
+                <div class="feature-card fade-in delay-3">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="#0066FF" stroke-width="2" fill="none"/>
+                            <path d="M16 20L22 26L32 14" stroke="#0066FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Branding</h3>
+                    <p>Add your logo, colors, and style. Your brand, your way. Create a cohesive dining experience.</p>
+                </div>
+                <div class="feature-card fade-in delay-4">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="28" rx="4" stroke="#0066FF" stroke-width="2" fill="none"/>
+                            <path d="M16 24L20 28L32 16" stroke="#0066FF" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="24" y1="32" x2="24" y2="40" stroke="#0066FF" stroke-width="2"/>
+                            <circle cx="24" cy="44" r="2" fill="#0066FF"/>
+                        </svg>
+                    </div>
+                    <h3>Analytics Ready</h3>
+                    <p>Track scans, popular items, and engagement. Make data-driven decisions for your menu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Work</h2>
+            <p class="section-subtitle fade-in delay-1">See the menus we've created for restaurants around the world</p>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in delay-1">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="20" fill="#0066FF"/>
+                                <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="48" font-weight="bold" fill="white">The Bistro</text>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>The Bistro</h3>
+                            <p>French Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-2">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="20" fill="#e63946"/>
+                                <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="48" font-weight="bold" fill="white">Pizza Hub</text>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Pizza Hub</h3>
+                            <p>Italian Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-3">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="20" fill="#2d5016"/>
+                                <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="48" font-weight="bold" fill="white">Garden Café</text>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Garden Café</h3>
+                            <p>Health-Focused</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-1">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="20" fill="#1a1a1a"/>
+                                <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="48" font-weight="bold" fill="#FFD700">Steakhouse</text>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Premium Steakhouse</h3>
+                            <p>Upscale Dining</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-2">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="20" fill="#FF8C00"/>
+                                <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="48" font-weight="bold" fill="white">Taco Factory</text>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Taco Factory</h3>
+                            <p>Mexican Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-3">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="20" fill="#1a1a1a"/>
+                                <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="48" font-weight="bold" fill="white">Tokyo Sushi</text>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Tokyo Sushi</h3>
+                            <p>Japanese Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text fade-in">
+                    <h2>See It In Action</h2>
+                    <p>Experience how your customers will view your menu. Interactive, elegant, and instantly accessible.</p>
+                    <a href="#signup" class="btn-primary btn-large">Try It Yourself</a>
+                </div>
+                <div class="demo-visual fade-in delay-1">
+                    <div class="demo-phone">
+                        <svg viewBox="0 0 300 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="40" width="260" height="520" rx="30" fill="#1a1a1a"/>
+                            <rect x="30" y="50" width="240" height="500" rx="20" fill="white"/>
+                            <!-- Header -->
+                            <rect x="30" y="50" width="240" height="80" fill="#0066FF" rx="20 20 0 0"/>
+                            <text x="150" y="95" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="white">Restaurant Menu</text>
+                            <!-- Menu Section -->
+                            <rect x="40" y="140" width="220" height="150" fill="#f5f5f5" rx="10"/>
+                            <text x="150" y="170" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Crispy Chicken Burger</text>
+                            <text x="150" y="195" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">Juicy chicken, crisp lettuce, special sauce</text>
+                            <text x="150" y="225" text-anchor="middle" font-family="Arial" font-size="18" fill="#0066FF" font-weight="bold">ETB14.99</text>
+                            
+                            <rect x="40" y="310" width="220" height="150" fill="#f5f5f5" rx="10"/>
+                            <text x="150" y="340" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Margherita Pizza</text>
+                            <text x="150" y="365" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">Fresh mozzarella, basil, tomato sauce</text>
+                            <text x="150" y="395" text-anchor="middle" font-family="Arial" font-size="18" fill="#0066FF" font-weight="bold">ETB16.99</text>
+                        </svg>
+                    </div>
+                    <!-- Floating QR Code -->
+                    <div class="demo-qr">
+                        <div class="qr-code">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                <rect width="120" height="120" fill="white"/>
+                                <rect x="10" y="10" width="20" height="20" fill="black"/>
+                                <rect x="50" y="10" width="10" height="10" fill="black"/>
+                                <rect x="90" y="10" width="20" height="20" fill="black"/>
+                                <rect x="10" y="50" width="10" height="10" fill="black"/>
+                                <rect x="50" y="50" width="20" height="20" fill="black"/>
+                                <rect x="90" y="50" width="10" height="10" fill="black"/>
+                                <rect x="10" y="90" width="20" height="20" fill="black"/>
+                                <rect x="50" y="90" width="10" height="10" fill="black"/>
+                                <rect x="90" y="90" width="20" height="20" fill="black"/>
+                            </svg>
+                        </div>
+                        <p>Scan to view menu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title fade-in">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle fade-in delay-1">Choose the plan that works for your restaurant</p>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in delay-1">
+                    <div class="pricing-header">
+                        <h3>Small</h3>
+                        <div class="price">
+                            <span class="currency">ETB</span>
+                            <span class="amount">3,000</span>
+                            <span class="period">one-time</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 1 menu</li>
+                        <li>Basic customization</li>
+                        <li>Standard support</li>
+                        <li>QR code generation</li>
+                    </ul>
+                    <a href="#signup" class="btn-secondary btn-large">Get Started</a>
+                </div>
+                <div class="pricing-card pricing-card-featured fade-in delay-2">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Medium</h3>
+                        <div class="price">
+                            <span class="currency">ETB</span>
+                            <span class="amount">5,000</span>
+                            <span class="period">one-time</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 10 menus</li>
+                        <li>Advanced customization</li>
+                        <li>Custom branding</li>
+                        <li>Analytics dashboard</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#signup" class="btn-primary btn-large">Get Started</a>
+                </div>
+                <div class="pricing-card fade-in delay-3">
+                    <div class="pricing-header">
+                        <h3>Large</h3>
+                        <div class="price">
+                            <span class="currency">ETB</span>
+                            <span class="amount">9,000</span>
+                            <span class="period">one-time</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited menus</li>
+                        <li>Full customization</li>
+                        <li>Multi-location support</li>
+                        <li>Advanced analytics</li>
+                        <li>API access</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                    <a href="#signup" class="btn-secondary btn-large">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">Loved by Restaurants</h2>
+            <p class="section-subtitle fade-in delay-1">See what our customers are saying</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in delay-1">
+                    <div class="testimonial-avatar">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="30" fill="#f0f0f0"/>
+                            <circle cx="30" cy="22" r="8" fill="#666"/>
+                            <path d="M12 50C12 40 20 35 30 35C40 35 48 40 48 50" fill="#666"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Switching to QR menus transformed our service. Customers love the ease, and we love the flexibility to update our menu instantly."</p>
+                    <p class="testimonial-author">Sarah Chen, The Bistro</p>
+                </div>
+                <div class="testimonial-card fade-in delay-2">
+                    <div class="testimonial-avatar">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="30" fill="#f0f0f0"/>
+                            <circle cx="30" cy="22" r="8" fill="#666"/>
+                            <path d="M12 50C12 40 20 35 30 35C40 35 48 40 48 50" fill="#666"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"The analytics feature helps us understand what customers want. Our sales improved by 20% after implementing digital menus."</p>
+                    <p class="testimonial-author">Michael Torres, Casa Italiana</p>
+                </div>
+                <div class="testimonial-card fade-in delay-3">
+                    <div class="testimonial-avatar">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="30" fill="#f0f0f0"/>
+                            <circle cx="30" cy="22" r="8" fill="#666"/>
+                            <path d="M12 50C12 40 20 35 30 35C40 35 48 40 48 50" fill="#666"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Easy to set up, beautiful design, and fantastic support. Our regulars love the modern experience. Highly recommended!"</p>
+                    <p class="testimonial-author">Emma Johnson, Garden Café</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>We Help Restaurants Modernize</h2>
+                    <p>At QR Menus, we believe dining should be simple, safe, and delightful. We help restaurants, cafes, and bars create beautiful digital menus that enhance the customer experience.</p>
+                    <p>Founded in 2023, we've helped over 10,000 establishments across the globe transition to contactless dining solutions. Our platform combines simplicity with powerful features.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Restaurants</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50M+</span>
+                            <span class="stat-label">Scans</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in delay-1">
+                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#f5f5f5" rx="20"/>
+                        <circle cx="100" cy="80" r="40" fill="#0066FF" opacity="0.2"/>
+                        <circle cx="300" cy="220" r="40" fill="#0066FF" opacity="0.2"/>
+                        <rect x="150" y="100" width="100" height="100" fill="#0066FF" opacity="0.1" rx="10"/>
+                        <path d="M180 140L200 160L220 140" stroke="#0066FF" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke-width="2" stroke-linecap="round"/>
+                                <polyline points="22,6 12,13 2,6" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>brooklemmas@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92V19.92C22 20.98 21.1 21.92 20.04 22.02C19.39 22.08 18.71 22 18.08 21.82C14.33 20.75 10.25 18.25 7.18 14.18C4.75 11.75 2.25 7.67 1.18 3.92C1 3.29 0.92 2.61 0.98 1.96C1.08 0.9 2.02 0 3.08 0H6.08C6.55 0 7.01 0.15 7.39 0.43C7.77 0.71 8.03 1.1 8.13 1.55C8.38 2.79 8.63 4.02 8.96 5.23C9.08 5.71 9.03 6.21 8.82 6.66C8.61 7.11 8.25 7.47 7.8 7.68L5.64 8.72C7.32 12.92 11.08 16.68 15.28 18.36L16.32 16.2C16.53 15.75 16.89 15.39 17.34 15.18C17.79 14.97 18.29 14.92 18.77 15.04C19.98 15.37 21.21 15.62 22.45 15.87C22.9 15.97 23.29 16.23 23.57 16.61C23.85 16.99 24 17.45 24 17.92V20.92Z" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>+251961020985</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in delay-1" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#0066FF"/>
+                            <path d="M10 20L20 25V30L10 25V20Z" fill="white"/>
+                            <path d="M25 15L30 17.5V20L25 17.5V15Z" fill="white"/>
+                            <circle cx="20" cy="15" r="3" fill="white"/>
+                        </svg>
+                        <span>QR Menus</span>
+                    </div>
+                    <p>Modernizing restaurant dining experiences with digital QR menus.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 QR Menus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
